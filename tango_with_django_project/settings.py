@@ -20,6 +20,8 @@ print(os.path.dirname(__file__))
 print(os.path.dirname(os.path.dirname(__file__)))
 
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -105,6 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+STATICFILES_DIRS = [STATIC_DIR, ]
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
